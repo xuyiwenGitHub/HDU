@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<iostream>
+#include<string.h>
+using namespace std;
+int main()
+{
+    int m,n;
+    while(scanf("%d %d",&m,&n),m!=0||n!=0)
+    {
+        int a=0,b=0;
+        while(m!=0)
+        {
+            m--;
+            b++;
+            a++;
+            if(b==n)
+            {
+                m++;
+                b=0;
+            }
+        }
+        cout<<a<<endl;
+
+    }
+    return 0;
+}
